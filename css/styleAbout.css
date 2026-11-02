@@ -1,0 +1,104 @@
+/*----------HERO-SECTION------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* background image*/
+.hero{
+    /* setting minimum height 60% and widith 100% for the hero part */
+    min-height: 60vh;
+    width: 100%;
+    /*  image source for the hero section was taken from:
+        https://www.cntraveler.com/gallery/the-most-beautiful-places-in-ireland?
+        setting background image, preventing image from tiling, fill the section while keeping image proportion, keeping the image centered as it is cropped 
+    */
+    background-image: url("../images/Cliffs-of-Moher-GettyImages.jpg") ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*setting the content to be flex, center the content horizontally , center the content vertically*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* setting a colour for the text and center it*/
+    color: #F9F8F3;
+    text-align: center;
+}
+
+
+.hero h1 {
+  /* Decorating h1 with a specific font and making it cursive back. */
+  font-family: 'Uncial Antiqua', cursive;
+  /* Scaling the heading with the viewport, from 2rem to 3.5rem. */
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  /* Add space below the heading. */
+  margin-bottom: 16px;
+  /*Adding layered dark shadows to help the heading stand out from the background. */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  /* Scaling the paragraph text with the viewport, within readable limits. */
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  /* Making the paragraph text bold. */
+  font-weight: bold;
+  /* Settting the spacing between lines for readability. */
+  line-height: 1.6;
+  /* Adding space below the paragraph. */
+  margin-bottom: 24px;
+  /* Adding layered dark shadows to improve contrast against the background. */
+  text-shadow: 0 1px 2px #000000, 0 2px 6px #000000, 0 0 14px rgba(0, 0, 0, 0.95);
+}
+
+.hero a {
+    /*removing underline*/
+    text-decoration: none;
+    /*settig the text colour, setting background colour and setting a border radius for the link*/
+    color: #1B3B1E;
+    background-color: #F9F8F3;
+    border-radius: 4px;
+    /*aligning text in the center of the link, setting space verticaly and horizontaly, setting a size for the text*/
+    text-align: center;
+    padding: 5px 8px;
+    font-size: 18px;
+}
+
+/* changing the background and text colour when hovering */
+.hero a:hover {
+    background-color: #1B3B1E;
+    color: #F9F8F3 ;
+}
+/*----------Content-SECTION------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.content {
+  box-sizing: border-box; /* Include padding in the element's total width */
+  width: calc(100% - 32px); /* Leave a 16px gap on each side of the screen */
+  max-width: 920px; /* Keep the panel from getting too wide on large screens */
+  margin: 32px auto; /* Add space above and below, and center the panel */
+  padding: clamp(24px, 5vw, 48px); /* Use more padding on larger screens */
+  background-color: #F9F8F3; /* Set the panel's warm off-white background */
+  color: #28362f; /* Set the main text color */
+  font: 16px/1.65 Arial, sans-serif; /* Set the body font, size, and line spacing */
+}
+.content h1,
+.content h2 {
+  color: #245b43; /* Use a deep green for headings */
+  font-family: Georgia, serif; /* Give headings a classic serif style */
+  line-height: 1.2; /* Keep heading lines compact */
+}
+.content h1 {
+  margin: 0 0 24px; /* Remove top margin and add space below the main heading */
+  font-size: clamp(2rem, 4vw, 2.7rem); /* Scale the main heading with screen size */
+}
+.content h2 {
+  margin: 28px 0 10px; /* Add space above and below section headings */
+  font-size: 1.4rem; /* Set the section heading size */
+}
+.content p,
+.content ul {
+  max-width: 72ch; /* Limit line length to make paragraphs and lists easier to read */
+}
+.content li {
+  margin: 6px 0; /* Add a little vertical space between list items */
+}
+.content span {
+  font-weight: bold; /* Emphasize the audience labels */
+  color: #245b43; /* Match those labels to the heading color */
+}

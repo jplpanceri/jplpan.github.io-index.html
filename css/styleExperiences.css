@@ -1,0 +1,160 @@
+
+/*setting marging for the page content to be separated from the other parts*/
+.experience{
+  margin: 32px auto; /* Add space above and below, and center the panel */
+}
+
+/*just making the title of the page centralized in the top row*/
+.centralize{
+  color: #173b22;
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  margin: 1.75rem 0;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.75);
+  
+}
+/*using flexbox to display the cards in rows, wrapping when the screen gets smaller and space them evenly*/
+.flip-card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 24px;
+}
+/*------------------------------filters---------------------------------------------------------------------------------------------*/
+
+.filter {
+  /*using flexbox to position the filter in the center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*creating gap and marging*/
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+/*giving colour and change the size of the label text*/
+.filter label {
+  color: #173b22;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/*giving a bigger size for the selection and its text*/
+.filter select {
+  min-width: 10rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+}
+
+/*giving a child div a background colour, adding space inside and giving a border*/
+.filter > div {
+  background: white;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+}
+
+/* Hide an experience card when JavaScript marks it as hidden */
+.experience-card[hidden] {
+  /* Override the card's normal display style */
+  display: none !important;
+}
+
+
+
+/*-----CARDS-----------------------------------------------------------------------------------------------------------------------*/
+/* card body dimension */
+.flip-card {
+    width: 400px;      
+    height: 350px;
+    /* adds depth to the flip */
+    perspective: 1000px;         
+}
+
+/* container to position the front and back side */
+.flip-card-inner {
+  /*positioning within the container, fills width and height of the parent*/
+  position: relative;
+  width: 100%;        
+  height: 100%;       
+  /* center text on both sides, smooths the transition between front and back, keeps the div in 3d space*/
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Flip the card 180 degrees around y-axis */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back faces on top of each other */
+.flip-card-front,
+.flip-card-back {
+  /*position each face in the same position inside the card, makes each face fill card width and height*/
+  position: absolute;
+  width: 100%;        
+  height: 100%;
+  /* hides reversal side in browsers(the first code is for safari only and second for the rest)*/
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;         
+}
+/* Style the front face, shown before the card is flipped */
+.flip-card-front {
+  /* set background and text colour*/
+  background-color: #1B3B1E;
+  color: #F9F8F3;            
+}
+/* Style the back face, shown after the card is flipped */
+.flip-card-back {
+  /*setting background an text colour*/
+  background-color: #F9F8F3;
+  color: #1B3B1E;
+  /*making the text bolc*/ 
+  font-weight: bold;
+  /*Turns the back face around so it appears after the flip */
+  transform: rotateY(180deg); 
+  /* keeps padding inside the dimension, setting a padding, using flexbox to display content in column*/
+  box-sizing: border-box;  
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Setting a font sized and marging for h2 inside the flipcard. */
+.flip-card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem  0.25rem;
+}
+/* Adding vertical marging to the paragraph and make it fill the remaining space in the card flex layout */
+.description {
+  margin: 0.75rem 0;
+  flex-grow: 1;
+}
+/* Arrange the footer content in a horizontal row. */
+.card-footer {
+  /*displaying the elements horizontally, putting them in opposite sides of the footer, aligning itens vertically*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*using a border to separate the footer from rest of the card and creating a space betwwen it and the content */
+  border-top: 1px solid #1B3B1E;
+  padding-top: 0.75rem;
+}
+/* Tag style */
+.tag {
+  /*positiong the tag inside the contaainer*/
+  align-self: flex-start;
+  /*text styling*/
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase; 
+  letter-spacing: 0.5px; 
+  /*pill shape*/
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px; 
+  /*setting text coloud and background colour*/
+  color: #F9F8F3;
+  background: #1B3B1E;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/

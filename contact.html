@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- declaring that we are using html for the browser -->
+
+<html lang="en"> <!-- root of the html doc, especifying language to be english -->
+
+    <head>                                                                          
+        <!--Page name-->
+        <title>Emerald Escapes - Contact</title>                                       
+        <!-- Universal keyboard settings and Display scale to fit in other devices format-->
+        <meta charset="UTF-8" >                                                     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <!-- link to external css files-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleContact.css">                                   
+        <!-- loading js file-->
+        <script src="script/scriptContact.js" defer ></script>                                           
+    </head>
+
+
+    <body class="flexcont">
+        <!--top bar navigator with a header and links for the other pages-->
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experiences</a>
+            <a href="contact.html">Contact & Boking Enquire</a>
+        </nav>
+        
+        <!--Contact Us, overview div-->
+        <div>
+            <div class="content">
+                <!--Heather and paragraph for the form-->
+                <h1>Contact Us</h1>
+                <p>Complete the form below. All fields are required.</p>
+                <!-- Collects the visitor's contact details and enquiry. -->
+                <form id="contactForm">
+                    <!-- Label the name field and link it to the ID in input -->
+                    <label for="fullName">Name</label>
+                    <!--Input of type text, ID for matching with label, name identifies the field value
+                    auto complete can use saved name details, required prevents an empty submission -->
+                    <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+                    <!--same for requiring email-->
+                    <label for="email">Email</label>
+                    <!--the type email also make sure that the email is in a valid format-->
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <!--Same fo phone number-->
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                    <!--Same for a drop down selection-->
+                    <label for="enquiry">Enquiry type</label>
+                    <select id="enquiry" name="enquiry" required>
+                        <!-- An empty value means this option is not a valid choice.-->
+                        <option value="">Please choose</option>
+                        <option value="booking">Booking</option>
+                        <option value="payment">Payment</option>
+                        <option value="generalInformation">General Information</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <!-- Same for message to be sent -->
+                    <label for="message">Message</label>
+                    <!--provides a text area with 5 rows visible, 20 characteres length-->
+                    <textarea id="message" name="message" rows="5" minlength="20" required></textarea>
+                    <!-- button to submit the form. -->
+                    <button type="submit">Send message</button>
+                </form>
+                <!-- To display a message of confirmation after form is sent -->
+                <p id="result" role="status"></p>
+               
+            </div>
+        </div>
+
+        <!-- Footer section for the site -->
+        <!-- footer tag to contain the footer --> 
+        <footer class="site-footer">
+                <!-- div to contain the company info -->
+                <div class="footer-main">
+                    <!-- div for the brand -->
+                    <div class="footer-brand">
+                        <h2>Emerald Escapes</h2>
+                    </div>
+                    <!-- div for contact number and address -->
+                    <div class="footer-contact">
+                        <address class="footer-address">
+                            <span>Address:</span>
+                            <span>14 Harbour View Lane<br>Galway, H91 X2E7, Ireland</span>
+                        </address>
+                        <div class="footer-phone">
+                            <span>Phone:</span>
+                            <a href="tel:+353830001234">+353 83 000 1234</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright sits on a separate line -->
+                <div class="footer-bottom">
+                    <small>© Emerald Escapes. All rights reserved.</small>
+                </div>
+            </footer>
+
+
+    </body>
+
+
+
+</html>

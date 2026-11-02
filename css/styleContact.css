@@ -1,0 +1,70 @@
+/* the box of the page*/
+.content {
+  box-sizing: border-box; /* Include padding in the element's total width */
+  width: calc(100% - 32px); /* Leave a 16px gap on each side of the screen */
+  max-width: 920px; /* Keep the panel from getting too wide on large screens */
+  margin: 32px auto; /* Add space above and below, and center the panel */
+  padding: clamp(24px, 5vw, 48px); /* Use more padding on larger screens */
+  background-color: #F9F8F3; /* Set the panel's warm off-white background */
+  color: #28362f; /* Set the main text color */
+  font: 16px/1.65 Arial, sans-serif; /* Set the body font, size, and line spacing */
+}
+/*Label style*/
+label {
+    /* makes each label a block to fill a line. Also make the font bold*/
+    display: block;
+    font-weight: bold;
+    /*putting margin on top and botton of label*/
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+/*Style applied to all inputs and the dropdawn selection*/
+input,
+select,
+textarea {
+    width: 100%; /* Makes each field fill the available width. */
+    padding: 10px; /* Adds space inside each field. */
+    border: 1px solid #64748b; /* Adds a thin slate-colored border. */
+    border-radius: 4px; /* Rounds the corners of each field. */
+    font: inherit; /* Uses the font settings of the parent element. */
+}
+
+/*limiting the text resize to only vertically*/
+textarea {
+    resize: vertical;
+}
+
+/*button style*/
+button {
+    /*setting a margin to to and setting a padding*/
+    margin-top: 20px;
+    padding: 12px 20px;
+    /*setting a background and text colour*/
+    background-color: #28362f;
+    color: white;
+    /*removing default border and rouding button corners*/
+    border: none;
+    border-radius: 4px;
+    font: inherit; /* Uses the font settings of the parent element. */
+    cursor: pointer; /* Shows a pointer cursor when hovering over the button. */
+}
+
+/*changing background colour when hovering the button*/
+button:hover {
+    background-color: #D67A43;
+}
+
+/*adding a border when the input, select text aand button are in focus*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible {
+    outline: 3px solid #D67A43;
+    outline-offset: 2px;
+}
+/*setting a colour and making the result text bold*/
+#result {
+    color: #28362f;
+    font-weight: bold;
+}
+

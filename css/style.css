@@ -1,0 +1,94 @@
+/* configuring display to be flex and direction of the contentent to be columns */  
+
+body{
+    /*(Google 2026) Gemini 3.1 Pro[ Large Language Model], Google Imagen [Image Generator]. Response to prompt: 'Generate a image for a background of a content 
+    part of a webpage with shamrocks all over the page but not eliminating the white completely' 16 October 2026.
+     Available at: https://gemini.google.com (Acessed: 16 October 2026)  */
+    background-image: url("../images/gemini-shamrock-page-background.jpeg");
+    /*prevent the image to tiling*/
+    background-repeat: no-repeat;
+    /* Align the image at the top and scale it to fill the page  */ 
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+/*using flexbox to display all the content verticaly */
+.flexcont{
+    display: flex;
+    flex-direction: column;
+}
+/*---------NAV-BAR-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* navigator bar style*/
+.topnav {
+    /*set colour background*/
+    background-color: #1B3B1E;
+    /*setting the nav to be flex, the elements to be centered, vertically center the content*/
+    display: flex;
+    justify-content: center;
+    align-items: center;            
+    /*creating space verticaly and horizontaly*/
+    padding: 10px 20px;             
+}
+
+/* navigation links bar style */
+.topnav a {
+    /*setting colour and removing underline*/
+    color: #F9F8F3;
+    text-decoration: none;
+    /*aligning text in the center of the link, setting space verticaly and horizontaly, setting a size for the text*/
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 18px;
+}
+
+/* changing the background and text colour when hovering */
+.topnav a:hover {
+    background-color: #D67A43;
+    color: #1B3B1E ;
+}
+
+
+/*----------FOOTERS-SECTION------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Make the footer fill the page and set its colors and spacing */
+.site-footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  color: #F9F8F3;
+  background: #1B3B1E;
+  margin-top: auto;
+}
+
+/* Arranging the footer sections in a row */
+.footer-main,
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Pushing the brand left and contact details right */
+.footer-main {
+    justify-content: space-between; 
+}
+/* Displaying the address in regular rather than italic text */
+.footer-address {
+    font-style: normal;
+}
+/* Removing the default space around the footer heading */
+.site-footer h2 { 
+    margin: 0; 
+}
+/* Matching the phone link color to the footer text */
+.footer-phone a { 
+    color: inherit; 
+}
+/* Separating the copyright line from the main footer content */
+.footer-bottom {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #aaa;
+}
+

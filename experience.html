@@ -1,0 +1,451 @@
+<!DOCTYPE html> <!-- declaring that we are using html for the browser -->
+
+<html lang="en"> <!-- root of the html doc, especifying language to be english -->
+
+    <head>                                                                          
+        <!--Page name-->
+        <title>Emerald Escapes - Experiences</title>                                       
+        <!-- Universal keyboard settings and Display scale to fit in other devices format-->
+        <meta charset="UTF-8" >                                                     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <!-- link to external css file-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleExperiences.css">                                   
+        <!-- loading js file-->
+        <script src="script/scriptExperiences.js" defer></script>                                           
+    </head>
+
+
+    <body class="flexcont">
+        <!--top bar navigator with a header and links for the other pages-->
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experiences</a>
+            <a href="contact.html">Contact & Boking Enquire</a>
+        </nav>
+
+        <!--Experience div-->
+        <div>
+            <div class="experience">
+                <div class="centralize">
+                    <h1>Experiences</h1>
+                </div>
+                    <!--Filter bar-->
+                    <!-- Filter controls -->
+                    <div class="filter">
+                    <div>
+                        <!-- Choose an experience category -->
+                        <label for="category">Category:</label>
+                        <select id="category" name="category">
+                        <option value="all">All</option>
+                        <option value="city">City</option>
+                        <option value="coastal">Coastal</option>
+                        <option value="countryside">Countryside</option>
+                        <option value="family">Family</option>
+                        <option value="cultural">Cultural</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- Choose a price range -->
+                        <label for="priceRange">Price Range:</label>
+                        <select id="priceRange" name="priceRange">
+                        <option value="all">All prices</option>
+                        <option value="0-150">Under €150</option>
+                        <option value="150-400">€150 – €400</option>
+                        <option value="400-800">€400 – €800</option>
+                        </select>
+                    </div>
+                    </div>
+                 <!-- Anthropic (2026) Claude Opus 5.5 [Large language model]. Response to prompt: 'Generate the list of experiences with descriptions, prices, and what categories
+                they fall under (city, coastal, countryside, family, cultural)
+                for the fictional company Emerald Escapes',
+                18 October 2026. Available at: https://claude.ai (Accessed: 18 October 2026).
+                -->
+                <div class="flip-card-row">
+                    <!--City Cards-->
+                    <div class="flip-card experience-card" data-category="city" data-price="95">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source for temple bar image taken from: https://en.wikipedia.org/wiki/The_Temple_Bar_%28public_house%29 -->
+                                <img src="images/Templebar.jpg" alt=" Picture of the outside of Temple Bar">
+                                <h2>Dublin Literary &amp; Pub Trail</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">city</span>
+                                    <h2>Dublin Literary &amp; Pub Trail</h2>
+                                    <p class="location">📍 Dublin</p>
+                                    <p class="description">Follow in the footsteps of Joyce and Wilde, then finish with live trad music in a historic pub.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 1 Day</span>
+                                    <span>From: €95</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="city" data-price="320">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of Galway Market Street was taken from: https://letstravelireland.ie/galway-city-streets/ -->
+                                <img src="images/shop-street-galway.jpg" alt=" Galway Market Street">
+                                <h2>Galway City Weekend</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">city</span>
+                                    <h2>Galway City Weekend</h2>
+                                    <p class="location">📍 Galway</p>
+                                    <p class="description">Street performers, Latin Quarter cafés and fresh seafood in Ireland's most colourful city.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 2 Nights</span>
+                                    <span>From: €320</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="city" data-price="120">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of titanic museum building was taken from: https://www.ireland.com/en-us/things-to-do/attractions/titanic-belfast/ -->
+                                <img src="images/titanic-museum-belfast.jpg" alt=" Titanic Belfast building">
+                                <h2>Belfast Titanic &amp; City Tour</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">city</span>
+                                    <h2>Belfast Titanic &amp; City Tour</h2>
+                                    <p class="location">📍 Belfast</p>
+                                    <p class="description">Explore the city's shipbuilding history, murals and lively Cathedral Quarter.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 1 day</span>
+                                    <span>From: €120</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- Costal --> <!-- -->
+                    <div class="flip-card experience-card" data-category="coastal" data-price="85">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of cliffs of mohen was taken by me. Original picture at the pictures folder plus picture linked -->
+                                <img src="images/IMG_1883.jpg" alt=" Picture of Cliffs of Mohen">
+                                <h2>Cliffs of Moher Coastal Walk</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">coastal</span>
+                                    <h2>Cliffs of Moher Coastal Walk</h2>
+                                    <p class="location">📍 Co. Clare</p>
+                                    <p class="description">A guided clifftop walk from Doolin with breathtaking Atlantic views and puffin spotting.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 1 Day</span>
+                                    <span>From: €85</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="coastal" data-price="410">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of surfing lessons was taken from: https://www.discoverireland.ie/mayo/achill-surf-education-adventure-centre -->
+                                <img src="images/surfing-school-keemBay-achilIsland.jpg" alt=" Surfing Lessons on Keem Bay, Achill Island">
+                                <h2>Achill Island Surf Weekend</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">coastal</span>
+                                    <h2>Achill Island Surf Weekend</h2>
+                                    <p class="location">📍 Co. Mayo</p>
+                                    <p class="description">Surf lessons for all levels on golden beaches, with seaside accommodation included.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 2 Nights</span>
+                                    <span>From: €410</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="coastal" data-price="290">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of Giant Causeway was taken from: https://youririshadventure.com/giants-causeway-from-belfast/ -->
+                                <img src="images/Giant-Causeway-rocks.jpeg" alt=" Hexagonal stones of the Giant's Causeway">
+                                <h2>Causeway Coast Explorer</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">coastal</span>
+                                    <h2>Causeway Coast Explorer</h2>
+                                    <p class="location">📍 Co. Antrim</p>
+                                    <p class="description">Discover the Giant's Causeway, Carrick-a-Rede rope bridge and Dunluce Castle.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 2 Nights</span>
+                                    <span>From: €290</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <!--countryside -->
+                    <div class="flip-card experience-card" data-category="countryside" data-price="620">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of rings of kerry was taken from: https://irishexperiencetours.com/ring-of-kerry/ -->
+                                <img src="images/rings-of-kerry.jpg" alt=" Green hills along the Ring of Kerry">
+                                <h2>Ring of Kerry Escape</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">countryside</span>
+                                    <h2>Ring of Kerry Escape</h2>
+                                    <p class="location">📍 Co. Kerry</p>
+                                    <p class="description">Lakes, mountains and charming villages on Ireland's most famous scenic loop.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 3 Nights</span>
+                                    <span>From: €620</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="countryside" data-price="720">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of connemara cottage was taken from: https://www.tridentholidayhomes.ie/property/galway/cleggan/cleggan-stone-cottage/245530/-->
+                                <img src="images/connenmara-cottage-retreat.jpg" alt=" Connemara cottage">
+                                <h2>Connemara Cottage Retreat</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">countryside</span>
+                                    <h2>Connemara Cottage Retreat</h2>
+                                    <p class="location">📍 Co. Galway</p>
+                                    <p class="description">Unwind in a traditional stone cottage surrounded by bogland, mountains and peace.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 4 Nights</span>
+                                    <span>From €720</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="countryside" data-price="260">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of Glendalough was taken from: https://rebeldublin.ie/tourist-attractions/765/?srsltid=AU7gw4Vvi56VlsmsHb-_G1fzEKW4Xb8d1XWoELoLJzOxS-x5HVd2jJVM  -->
+                                <img src="images/Glendalough_IMG_1309.jpg" alt=" Glendalough ">
+                                <h2>Wicklow Mountains Hike</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">countryside</span>
+                                    <h2>Wicklow Mountains Hike</h2>
+                                    <p class="location">📍 Co. Wicklow</p>
+                                    <p class="description">Guided hikes around Glendalough's lakes and monastic ruins, just an hour from Dublin.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 2 Days</span>
+                                    <span>From: €260</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- family -->
+                    <div class="flip-card experience-card" data-category="family" data-price="140">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of Giraffes at fota was taken from: https://www.fotawildlife.ie/pages/animal-and-plant-listing/rothschild-giraffe -->
+                                <img src="images/giraffes.jpg" alt=" Giraffes at Fota Wildlife Park">
+                                <h2>Fota Wildlife Family Day</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">family</span>
+                                    <h2>Fota Wildlife Family Day</h2>
+                                    <p class="location">📍 Co. Cork</p>
+                                    <p class="description">Meet giraffes, cheetahs and lemurs at Ireland's open-air wildlife park.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 1 Day</span>
+                                    <span >From: €140</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="family" data-price="360">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of family cycling was taken from: https://www.greenway.ie/great-western-greenway/great-western-greenway/ -->
+                                <img src="images/Greenway-cycling-westport.jpg" alt=" Family cycling on the Great Western Greenway">
+                                <h2>Westport Family Adventure</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">family</span>
+                                    <h2>Westport Family Adventure</h2>
+                                    <p class="location">📍 Co. Mayo</p>
+                                    <p class="description">Cycle the traffic-free Great Western Greenway and explore Westport House grounds.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 2 Nights</span>
+                                    <span >From: €360</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="family" data-price="450">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of children feeding lamb was. taken from: https://holdababylamb.ie/hold-a-baby-lamb-ireland/ -->
+                                <img src="images/children-feeding-lamb.jpg" alt=" Children feeding lambs on an Irish farm">
+                                <h2>Farm Stay &amp; Beach Break</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">family</span>
+                                    <h2>Farm Stay &amp; Beach Break</h2>
+                                    <p class="location">📍 Co. Wexford</p>
+                                    <p class="description">Feed the animals, collect eggs and spend afternoons on Ireland's sunny south-east beaches.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 3 Nights</span>
+                                    <span >From: €450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!--Cultural-->
+
+                    <div class="flip-card experience-card" data-category="cultural" data-price="130">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image source of newgrange passage tomb was take from: https://www.dalysofdonore.com/places-of-interest/newgrange -->
+                                <img src="images/newgrange-passge-tomb-boyne-valley.jpg" alt="Newgrange passage tomb in the Boyne Valley">
+                                <h2>Newgrange &amp; Boyne Valley</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">cultural</span>
+                                    <h2>Newgrange &amp; Boyne Valley</h2>
+                                    <p class="location">📍 Co. Meath</p>
+                                    <p class="description">Step inside a 5,000-year-old passage tomb, older than Stonehenge and the pyramids.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 1 Day</span>
+                                    <span >From: €130</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="cultural" data-price="110">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!-- Image source of kilkennu castle was taken from: https://www.discoverireland.ie/kilkenny/kilkenny-castle -->
+                                <img src="images/kilkenny-castle.jpg" alt=" Kilkenny Castle">
+                                <h2>Kilkenny Medieval Mile</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">cultural</span>
+                                    <h2>Kilkenny Medieval Mile</h2>
+                                    <p class="location">📍 Co. Kilkenny</p>
+                                    <p class="description">Tour Kilkenny Castle, medieval lanes and craft workshops in Ireland's medieval capital.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 1 Day</span>
+                                    <span >From: €110</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="flip-card experience-card" data-category="cultural" data-price="390">
+                        <!--inner part of the card-->
+                        <div class="flip-card-inner">
+                            <!--front side of the card-->
+                            <div class="flip-card-front">
+                                <!--Image Source of the fort was taken from: https://heritageireland.ie/places-to-visit/dun-aonghasa/ -->
+                                <img src="images/Dun-Aonghasa-exterior-walls.jpg" alt=" Dún Aonghasa fort on Inis Mór, Aran Islands">
+                                <h2>Aran Islands Heritage Stay</h2>
+                            </div>
+                            <!--back side of the card-->
+                            <div class="flip-card-back">
+                                    <span class="tag">cultural</span>
+                                    <h2>Aran Islands Heritage Stay</h2>
+                                    <p class="location">📍 Co. Galway</p>
+                                    <p class="description">Ancient stone forts, Aran knitwear and a taste of island life where Irish is still spoken.</p>
+                                <div class="card-footer">
+                                    <span>⏱ 2 Nights</span>
+                                    <span >From €390</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer section for the site -->
+        <!-- footer tag to contain the footer --> 
+        <footer class="site-footer">
+                <!-- div to contain the company info -->
+                <div class="footer-main">
+                    <!-- div for the brand -->
+                    <div class="footer-brand">
+                        <h2>Emerald Escapes</h2>
+                    </div>
+                    <!-- div for contact number and address -->
+                    <div class="footer-contact">
+                        <address class="footer-address">
+                            <span>Address:</span>
+                            <span>14 Harbour View Lane<br>Galway, H91 X2E7, Ireland</span>
+                        </address>
+                        <div class="footer-phone">
+                            <span>Phone:</span>
+                            <a href="tel:+353830001234">+353 83 000 1234</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright sits on a separate line -->
+                <div class="footer-bottom">
+                    <small>© Emerald Escapes. All rights reserved.</small>
+                </div>
+            </footer>
+
+
+    </body>
+
+
+
+</html>
